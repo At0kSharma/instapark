@@ -7,4 +7,8 @@ class TextStrings {
       "For Easy Understanding, Choose Your Prefered Teacher";
   static const String onBoardingSubtitle3 =
       "We Got Special One to One Class for Only You";
+
+  static const String loginTitle = "Welcome back,";
+  static const String loginSubTitle =
+      "Discover Limitness Choise and unmatched Convenience.";
 }
