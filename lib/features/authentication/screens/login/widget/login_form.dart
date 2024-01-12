@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:instapark/common/navigation_menu.dart';
 import 'package:instapark/features/authentication/screens/login/forget_password.dart';
 import 'package:instapark/features/authentication/screens/register/register.dart';
 
@@ -26,7 +27,7 @@ class LoginForm extends StatelessWidget {
           ///password
           TextFormField(
             decoration: const InputDecoration(
-              prefixIcon: Icon(Iconsax.direct_right),
+              prefixIcon: Icon(Iconsax.password_check),
               labelText: "Password",
               suffixIcon: Icon(Iconsax.eye_slash),
             ),
@@ -61,7 +62,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const NavigationMenu()),
               child: const Text("Sign In"),
             ),
           ),

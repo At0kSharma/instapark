@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:instapark/common/widgets/success_screen.dart';
-import 'package:instapark/features/authentication/screens/login/login.dart';
 import 'package:instapark/utils/constants/images_strings.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
@@ -15,7 +13,7 @@ class ResetPasswordScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-              onPressed: () => Get.offAll(() => const LoginScreen()),
+              onPressed: () => Get.back(),
               icon: const Icon(CupertinoIcons.clear))
         ],
       ),
@@ -27,7 +25,7 @@ class ResetPasswordScreen extends StatelessWidget {
                 image: AssetImage(ImagesStrings.onBoardingImage1), width: 250),
             const SizedBox(height: 30),
             const Text(
-              "Verify your email address!",
+              "Password reset email sent",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 10),
@@ -36,21 +34,14 @@ class ResetPasswordScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             const Text(
-              "We have sent you verification mail! Please verify before proceding further.",
+              "We have sent you a mail with a password reset link.",
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                  onPressed: () => Get.to(() => SuccessScreen(
-                        title: "Account is Verified",
-                        subTitle:
-                            "Welcome to our family, you can now explore without any restriction",
-                        imageString: ImagesStrings.onBoardingImage3,
-                        onPressed: () => Get.to(() => const LoginScreen()),
-                      )),
-                  child: const Text("Continue")),
+              child:
+                  ElevatedButton(onPressed: () {}, child: const Text("Done")),
             ),
             const SizedBox(height: 10),
             TextButton(onPressed: () {}, child: const Text("Resend email")),
