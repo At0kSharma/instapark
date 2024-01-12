@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:instapark/features/authentication/screens/register/verify_email.dart';
 import 'package:instapark/features/authentication/screens/register/widget/term_condition.dart';
 
 class RegisterForm extends StatelessWidget {
@@ -72,7 +74,7 @@ class RegisterForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
               child: const Text("Create Account"),
             ),
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:instapark/features/authentication/screens/login/forget_password.dart';
 import 'package:instapark/features/authentication/screens/register/register.dart';
 
 class LoginForm extends StatelessWidget {
@@ -47,7 +48,7 @@ class LoginForm extends StatelessWidget {
               ),
 
               TextButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const ForgetPassword()),
                 child: const Text("Forget Password"),
               ),
             ],
