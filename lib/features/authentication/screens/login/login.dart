@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:instapark/features/authentication/screens/widget/form_divider.dart';
+import 'package:instapark/common/widgets/form_divider.dart';
+import 'package:instapark/common/widgets/sign_in_options.dart';
 import 'package:instapark/features/authentication/screens/login/widget/login_form.dart';
 import 'package:instapark/features/authentication/screens/login/widget/logo_title.dart';
-import 'package:instapark/features/authentication/screens/widget/sign_in_options.dart';
 import 'package:instapark/utils/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {

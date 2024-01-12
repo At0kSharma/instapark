@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:instapark/features/authentication/screens/register/register.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -14,7 +16,9 @@ class LoginForm extends StatelessWidget {
           ///email
           TextFormField(
             decoration: const InputDecoration(
-                prefixIcon: Icon(Iconsax.direct_right), labelText: "Email"),
+              prefixIcon: Icon(Iconsax.direct_right),
+              labelText: "Email",
+            ),
           ),
           const SizedBox(height: 16),
 
@@ -34,7 +38,10 @@ class LoginForm extends StatelessWidget {
               ///remember me
               Row(
                 children: [
-                  Checkbox(value: true, onChanged: (value) {}),
+                  SizedBox(
+                      height: 24,
+                      width: 24,
+                      child: Checkbox(value: true, onChanged: (value) {})),
                   const Text("Remember me")
                 ],
               ),
@@ -63,7 +70,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const RegisterScreen()),
               child: const Text("Create Account"),
             ),
           ),
