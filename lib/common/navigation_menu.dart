@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:instapark/features/home/screen/home_screen.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -19,8 +20,10 @@ class NavigationMenu extends StatelessWidget {
               controller.selectedIndex.value = index,
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: "Shop"),
-            NavigationDestination(icon: Icon(Iconsax.heart), label: "Wishlist"),
+            NavigationDestination(icon: Icon(Iconsax.award), label: "Course"),
+            NavigationDestination(icon: Icon(Iconsax.heart), label: "Events"),
+            NavigationDestination(
+                icon: Icon(Iconsax.archive_book), label: "Enrolled"),
             NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
           ],
         ),
@@ -33,9 +36,10 @@ class NavigationMenu extends StatelessWidget {
 class NavigationMenuController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
-    Container(color: Colors.amber),
+    const HomeScreen(),
     Container(color: Colors.red),
     Container(color: Colors.blue),
-    Container(color: Colors.green)
+    Container(color: Colors.green),
+    Container(color: Colors.grey)
   ];
 }
