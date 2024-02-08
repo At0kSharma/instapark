@@ -25,9 +25,6 @@ Instapark is a full-stack ecommerce app built with Flutter and Firebase, designe
   - get: ^4.6.6
   - get_storage: ^2.1.1
 
-## Screenshots
-
-[Insert screenshots here]
 
 ## Setup
 
