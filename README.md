@@ -57,15 +57,16 @@ Run the app:
 
 ## Usage
 
---Open the Instapark app on your device or emulator.
---Navigate through the onboarding screens using the next button or skip button to proceed to the login/signup screen.
---Log in or sign up using your email and password, or use the sign-in with Google option.
---Verify your email address if prompted.
---Explore the home screen with bottom navigation buttons to browse products and categories.
+-Open the Instapark app on your device or emulator.
+-Navigate through the onboarding screens using the next button or skip button to proceed to the login/signup screen.
+-Log in or sign up using your email and password, or use the sign-in with Google option.
+-Verify your email address if prompted.
+-Explore the home screen with bottom navigation buttons to browse products and categories.
 
 ## Contributing
 
 Contributions are welcome! Please follow the guidelines
 
-##License
+## License
+
 This project is licensed under the MIT License.
